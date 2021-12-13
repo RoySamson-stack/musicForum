@@ -73,3 +73,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.comment-section{
+  height: 100px;
+  align-items: center;
+}
+.comment-btn{
+  background-color: lightblue;
+  padding: 5px;
+  height: 28px;
+  border-radius: 5px;
+}

@@ -8,12 +8,28 @@ const ToDo = ({ posts, completePost, removePost, updatePost }) => {
     id: null,
     value: ''
   });
+  const [comment, setComment] = useState('');
 
   const submitUpdate = value => {
     updatePost(edit.id, value);
     setEdit({
       id: null,
       value: ''
+    });
+  };
+  //create handlechange 
+  const handleChange = e => {
+    setComment({
+      ...comment,
+      value: e.target.value
+    });
+  };
+//create handlesubmit function for setComment
+  const handleSubmit = e => {
+    e.preventDefault();
+    setComment({
+      ...comment,
+      value: e.target.value
     });
   };
 
@@ -43,7 +59,10 @@ const ToDo = ({ posts, completePost, removePost, updatePost }) => {
       </div>
             
     </div>
-    <input type="" className="post-comment" placeholder="comment"/>
+    <form onSubmit={handleSubmit} className="comment-section">
+    <input type="" className="post-comment" onChange={handleChange} placeholder="comment"/>
+    <button className="comment-btn" onSubmit={handleSubmit}  type="submit">comment</button>
+    </form>
     </div>
   ));
 };
