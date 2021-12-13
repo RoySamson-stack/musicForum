@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import Forum from "./components/main";
 
 function App() {
   return (
