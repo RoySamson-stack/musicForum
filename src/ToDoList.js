@@ -1,54 +1,54 @@
 import React, { useState } from 'react';
 import TodoForm from './ToDoForm';
-import Todo from './ToDo';
+import ToDo from './ToDo';
 
 function TodoList() {
-  const [todos, setTodos] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-  const addTodo = todo => {
-    if (!todo.text || /^\s*$/.test(todo.text)) {
+  const addPost = post => {
+    if (!post.text || /^\s*$/.test(post.text)) {
       return;
     }
 
-    const newTodos = [todo, ...todos];
+    const newposts = [post, ...posts];
 
-    setTodos(newTodos);
-    console.log(...todos);
+    setPosts(newposts);
+    console.log(...posts);
   };
 
-  const updateTodo = (todoId, newValue) => {
+  const updatePost = (postId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
     }
 
-    setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));
+    setPosts(prev => prev.map(item => (item.id === postId ? newValue : item)));
   };
 
-  const removeTodo = id => {
-    const removedArr = [...todos].filter(todo => todo.id !== id);
+  const removePost = id => {
+    const removedArr = [...posts].filter(post => post.id !== id);
 
-    setTodos(removedArr);
+    setPosts(removedArr);
   };
 
-  const completeTodo = id => {
-    let updatedTodos = todos.map(todo => {
-      if (todo.id === id) {
-        todo.isComplete = !todo.isComplete;
+  const completePost = id => {
+    let updatedposts = posts.map(post => {
+      if (post.id === id) {
+        post.isComplete = !post.isComplete;
       }
-      return todo;
+      return post;
     });
-    setTodos(updatedTodos);
+    setPosts(updatedposts);
   };
 
   return (
     <>
       <h1>What's the Plan for Today?</h1>
-      <TodoForm onSubmit={addTodo} />
-      <Todo
-        todos={todos}
-        completeTodo={completeTodo}
-        removeTodo={removeTodo}
-        updateTodo={updateTodo}
+      <TodoForm onSubmit={addPost} />
+      <ToDo
+        posts={posts}
+        completePost={completePost}
+        removePost={removePost}
+        updatePost={updatePost}
       />
     </>
   );

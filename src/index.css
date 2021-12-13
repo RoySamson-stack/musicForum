@@ -35,4 +35,22 @@ body {
   border-radius: 10px;
   color: white;
   background-color: blue;
+}.post-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin: 10px;
+  background-color: blue;
+  padding: 5px;
+  border-radius: 25px;
+  height: 150px
+}
+.edit-icon{
+  width: 40px;
+  height: 30px;
+}
+.delete-icon{
+  width: 40px;
+  height: 30px;
 }
