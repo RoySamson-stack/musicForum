@@ -22,6 +22,7 @@ const ToDo = ({ posts, completePost, removePost, updatePost }) => {
   }
 
   return posts.map((post, index) => (
+    <div className="inline">
     <div
       className={post.isComplete ? 'post-row complete' : 'post-row'}
       key={index}
@@ -38,7 +39,11 @@ const ToDo = ({ posts, completePost, removePost, updatePost }) => {
           onClick={() => setEdit({ id: post.id, value: post.text })}
           className='edit-icon'
         />
+
       </div>
+            
+    </div>
+    <input type="" className="post-comment" placeholder="comment"/>
     </div>
   ));
 };

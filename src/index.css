@@ -12,10 +12,19 @@ body {
 .forum-header {
   font-size: 20px;
 }
+.forum-title{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 
 .forum-container {
   display: flex;
-  flex-direction: column;
   width: 700px;
   justify-content: space-between;
 }
@@ -29,20 +38,19 @@ body {
 
 .forum-btn {
   margin-top: 10px;
-  width: 10rem;
+  width: 5rem;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 10px;
   border-radius: 10px;
   color: white;
   background-color: blue;
-}.post-row{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.inline{
+  display: block;
   color: #fff;
   margin: 10px;
   background-color: blue;
-  padding: 5px;
+  padding: 15px;
   border-radius: 25px;
   height: 150px
 }
@@ -53,4 +61,15 @@ body {
 .delete-icon{
   width: 40px;
   height: 30px;
+}
+.post-comment{
+  height: 30px;
+  width: 250px;
+  margin-top: 50px;
+  display: flex;
+  
+}
+.post-row{
+  display: flex;
+  justify-content: space-between;
 }
