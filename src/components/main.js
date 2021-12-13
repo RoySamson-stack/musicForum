@@ -1,13 +1,28 @@
-import React from "react"
+import React, {useState} from "react"
 
-export default function Forum(){
+export default function Forum(props){
+
+  const [post, setPost] = useState("")
+
+//read the input type from the form
+  const handleChange = (e) => {
+    setPost(e.target.value)
+  }
+
+  //submit the data
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(post)
+    setPost("")
+  }
+
+//return the form to pick the data 
   return(
-    <div className="forum-main">
-      <h1 className="forum-header">Forum</h1>
-      <div className="forum-container">
-        <input type="" className="forum-post"/>
-        <button className="forum-btn">Create post</button>
-      </div>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input type="text" value={post} onChange={handleChange}/>
+        <button>Submit</button>
+      </form>
     </div>
   )
 }

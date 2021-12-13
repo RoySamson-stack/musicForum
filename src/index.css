@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -8,25 +8,28 @@ body {
   margin: 20px;
   font-family: 'Roboto', sans-serif;
 }
-.forum-header{
+
+.forum-header {
   font-size: 20px;
 }
-.forum-container{
-display: flex;
-flex-direction: column;
-width: 700px;
-justify-content: space-between;
+
+.forum-container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  justify-content: space-between;
 }
-.forum-post{
+
+.forum-post {
   width: 500px;
-  height: 200px;
   border: 1px solid black;
   border-radius: 15px;
   padding: 10px;
 }
-.forum-btn{
+
+.forum-btn {
   margin-top: 10px;
-  width: 20rem;
+  width: 10rem;
   padding: 10px;
   font-size: 1.2rem;
   border-radius: 10px;
