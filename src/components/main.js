@@ -16,12 +16,18 @@ export default function Forum(props){
     setPost("")
   }
 
-//return the form to pick the data 
+//map the data 
+
+
   return(
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={post} onChange={handleChange}/>
-        <button>Submit</button>
+        <input type="text"
+         value={post} 
+         onChange={handleChange}
+         className="forum-post"
+         />
+        <button className="forum-btn">Submit</button>
       </form>
     </div>
   )
