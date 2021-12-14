@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ToDoList from "./ToDoList";
-import ToDoForm from './ToDoForm';
+import ToDoList from "./postList";
+import ToDoForm from './postForm';
 
 function App() {
   
@@ -30,6 +30,7 @@ function App() {
     <div className="App">
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
       <ToDoForm addTask={addTask}/>
+    
     </div>
   );
 }

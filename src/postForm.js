@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function TodoForm(props) {
+function postForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : '');
 
   const inputRef = useRef(null);
@@ -44,7 +44,7 @@ function TodoForm(props) {
         <>
         <div className="">
           <input
-            placeholder='Make a post'
+            placeholder='Make Post'
             value={input}
             onChange={handleChange}
             name='text'
@@ -61,4 +61,4 @@ function TodoForm(props) {
   );
 }
 
-export default TodoForm;
+export default postForm;

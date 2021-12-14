@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import TodoForm from './ToDoForm';
+import postForm from './postForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
+import Comments from './Comments'
 
-const ToDo = ({ posts, completePost, removePost, updatePost }) => {
+const forum = ({ posts, completePost, removePost, updatePost }) => {
   const [edit, setEdit] = useState({
     id: null,
     value: ''
@@ -59,12 +60,12 @@ const ToDo = ({ posts, completePost, removePost, updatePost }) => {
       </div>
             
     </div>
-    <form onSubmit={handleSubmit} className="comment-section">
-    <input type="" className="post-comment" onChange={handleChange} placeholder="comment"/>
-    <button className="comment-btn" onSubmit={handleSubmit}  type="submit">comment</button>
-    </form>
+    <Comments
+      commentsUrl="http://localhost:3004/comments"
+      currentUserId="1"
+    />
     </div>
   ));
 };
 
-export default ToDo;
+export default forum;
