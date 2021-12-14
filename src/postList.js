@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import postForm from './forumForm';
-import forum from './forum';
+import TodoForm from './postForm'
+import Todo from './forum';
 
-function postList() {
+function TodoList() {
   const [posts, setPosts] = useState([]);
 
   const addPost = post => {
@@ -43,15 +43,18 @@ function postList() {
   return (
     <>
       <h1>Music</h1>
-      <postForm onSubmit={addPost} />
-      <forum
+      <TodoForm onSubmit={addPost} 
+       className="extra"
+      />
+      <Todo
         posts={posts}
         completePost={completePost}
         removePost={removePost}
         updatePost={updatePost}
+       
       />
     </>
   );
 }
 
-export default postList;
+export default TodoList;

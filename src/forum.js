@@ -4,7 +4,7 @@ import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import Comments from './Comments'
 
-const forum = ({ posts, completePost, removePost, updatePost }) => {
+const Todo= ({ posts, completePost, removePost, updatePost }) => {
   const [edit, setEdit] = useState({
     id: null,
     value: ''
@@ -35,7 +35,7 @@ const forum = ({ posts, completePost, removePost, updatePost }) => {
   };
 
   if (edit.id) {
-    return <TodoForm edit={edit} onSubmit={submitUpdate} />;
+    return <postForm edit={edit} onSubmit={submitUpdate} />;
   }
 
   return posts.map((post, index) => (
@@ -68,4 +68,4 @@ const forum = ({ posts, completePost, removePost, updatePost }) => {
   ));
 };
 
-export default forum;
+export default Todo;

@@ -176,3 +176,6 @@ body {
 .replies {
   margin-top: 20px;
 }
+.extra{
+  display: none
+}
