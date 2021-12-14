@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/musicForum/static/css/main.d17676f6.chunk.css",
+    "main.js": "/musicForum/static/js/main.509ab0f4.chunk.js",
+    "main.js.map": "/musicForum/static/js/main.509ab0f4.chunk.js.map",
+    "runtime-main.js": "/musicForum/static/js/runtime-main.e62e920b.js",
+    "runtime-main.js.map": "/musicForum/static/js/runtime-main.e62e920b.js.map",
+    "static/js/2.bd32c7d0.chunk.js": "/musicForum/static/js/2.bd32c7d0.chunk.js",
+    "static/js/2.bd32c7d0.chunk.js.map": "/musicForum/static/js/2.bd32c7d0.chunk.js.map",
+    "static/js/3.d527bf7f.chunk.js": "/musicForum/static/js/3.d527bf7f.chunk.js",
+    "static/js/3.d527bf7f.chunk.js.map": "/musicForum/static/js/3.d527bf7f.chunk.js.map",
+    "index.html": "/musicForum/index.html",
+    "static/css/main.d17676f6.chunk.css.map": "/musicForum/static/css/main.d17676f6.chunk.css.map",
+    "static/js/2.bd32c7d0.chunk.js.LICENSE.txt": "/musicForum/static/js/2.bd32c7d0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e62e920b.js",
+    "static/js/2.bd32c7d0.chunk.js",
+    "static/css/main.d17676f6.chunk.css",
+    "static/js/main.509ab0f4.chunk.js"
+  ]
+}
