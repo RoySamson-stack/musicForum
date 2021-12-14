@@ -43,6 +43,7 @@ function TodoList() {
   return (
     <>
       <h1>Music</h1>
+      <p>Kindly use the first input</p>
       <TodoForm onSubmit={addPost} 
        className="extra"
       />

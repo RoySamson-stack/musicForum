@@ -53,7 +53,7 @@ function TodoForm(props) {
           />
           </div>
           <button onClick={handleSubmit} className='forum-btn'>
-            Add todo
+            Make a post..
           </button>
         </>
       )}

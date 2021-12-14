@@ -72,6 +72,8 @@ body {
 .post-row{
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: -80px 80px 80px;
 }
 .comment-section{
   height: 100px;
@@ -94,7 +96,7 @@ body {
 }
 
 .comments-container {
-  margin-top: 40px;
+  margin-top:150px;
   display: flex;
 }
 
